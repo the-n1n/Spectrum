@@ -5,6 +5,8 @@ import net.minecraft.block.*;
 import net.minecraft.entity.*;
 
 public enum SpectrumSkullBlockType implements SkullBlock.SkullType {
+    // Vanilla
+    ALLAY(EntityType.ALLAY),
     AXOLOTL_BLUE(EntityType.AXOLOTL),
     AXOLOTL_BROWN(EntityType.AXOLOTL),
     AXOLOTL_CYAN(EntityType.AXOLOTL),
@@ -26,6 +28,9 @@ public enum SpectrumSkullBlockType implements SkullBlock.SkullType {
     EVOKER(EntityType.EVOKER),
     FOX(EntityType.FOX),
     FOX_ARCTIC(EntityType.FOX),
+    FROG_COLD(EntityType.FROG),
+    FROG_TEMPERATE(EntityType.FROG),
+    FROG_WARM(EntityType.FROG),
     GHAST(EntityType.GHAST),
     GLOW_SQUID(EntityType.GLOW_SQUID),
     GOAT(EntityType.GOAT),
@@ -95,25 +100,22 @@ public enum SpectrumSkullBlockType implements SkullBlock.SkullType {
     SQUID(EntityType.SQUID),
     STRAY(EntityType.STRAY),
     STRIDER(EntityType.STRIDER),
+    TADPOLE(EntityType.TADPOLE),
     TRADER_LLAMA(EntityType.TRADER_LLAMA),
     TURTLE(EntityType.TURTLE),
     VEX(EntityType.VEX),
     VILLAGER(EntityType.VILLAGER),
     VINDICATOR(EntityType.VINDICATOR),
     WANDERING_TRADER(EntityType.WANDERING_TRADER),
+    WARDEN(EntityType.WARDEN),
     WITCH(EntityType.WITCH),
     WITHER(EntityType.WITHER),
     WOLF(EntityType.WOLF),
     ZOGLIN(EntityType.ZOGLIN),
     ZOMBIE_VILLAGER(EntityType.ZOMBIE_VILLAGER),
     ZOMBIFIED_PIGLIN(EntityType.ZOMBIFIED_PIGLIN),
-    FROG_TEMPERATE(EntityType.FROG),
-    FROG_WARM(EntityType.FROG),
-    FROG_COLD(EntityType.FROG),
-    TADPOLE(EntityType.TADPOLE),
-    ALLAY(EntityType.ALLAY),
-    WARDEN(EntityType.WARDEN),
 
+    // Spectrum
     EGG_LAYING_WOOLY_PIG(SpectrumEntityTypes.EGG_LAYING_WOOLY_PIG),
     KINDLING(SpectrumEntityTypes.KINDLING),
 	PRESERVATION_TURRET(SpectrumEntityTypes.PRESERVATION_TURRET),
