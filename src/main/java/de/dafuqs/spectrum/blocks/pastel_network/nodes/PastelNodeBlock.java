@@ -153,7 +153,6 @@ public class PastelNodeBlock extends SpectrumFacingBlock implements BlockEntityP
         return null;
     }
 
-    @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
         return new PastelNodeBlockEntity(pos, state);

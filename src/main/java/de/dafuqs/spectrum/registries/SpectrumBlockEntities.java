@@ -85,7 +85,7 @@ public class SpectrumBlockEntities {
 	public static BlockEntityType<PreservationRoundelBlockEntity> PRESERVATION_ROUNDEL;
 	public static BlockEntityType<PreservationBlockDetectorBlockEntity> PRESERVATION_BLOCK_DETECTOR;
 	
-	private static <T extends BlockEntity> BlockEntityType<T> register(String id, FabricBlockEntityTypeBuilder.Factory<T> factory, Block... blocks) {
+	public static <T extends BlockEntity> BlockEntityType<T> register(String id, FabricBlockEntityTypeBuilder.Factory<T> factory, Block... blocks) {
 		return Registry.register(Registries.BLOCK_ENTITY_TYPE, SpectrumCommon.locate(id), FabricBlockEntityTypeBuilder.create(factory, blocks).build());
 	}
 	
