@@ -94,7 +94,7 @@ dependencies {
 	modCompileOnly("maven.modrinth:colorful-hearts:${project.colorful_hearts_version}") { transitive = false }
 	//modLocalRuntime ("maven.modrinth:colorful-hearts:${project.colorful_hearts_version}") {transitive = false}
 
-	modImplementation("maven.modrinth:Botania:XiOSfzIW")
+	modImplementation("maven.modrinth:Botania:${project.botania_version}")
 
 	// Connect to local dev servers
 	modLocalRuntime("curse.maven:authme-356643:4629826")
