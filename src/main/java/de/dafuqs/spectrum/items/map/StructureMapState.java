@@ -17,6 +17,8 @@ import net.minecraft.world.*;
 import net.minecraft.world.gen.structure.*;
 import org.jetbrains.annotations.*;
 
+import java.util.*;
+
 public class StructureMapState extends MapState {
 
     private final MapStateAccessor accessor;
@@ -74,7 +76,7 @@ public class StructureMapState extends MapState {
         if (world.getServer().getSaveProperties().getGeneratorOptions().shouldGenerateStructures()) {
             Registry<Structure> registry = getStructureRegistry(world);
             if (registry != null) {
-                RegistryEntryList<Structure> entryList = null; //new RegistryEntryList.Direct<>(List.of(registry.getEntry(structure)));
+                RegistryEntryList<Structure> entryList = new RegistryEntryList.Direct<>(List.of(registry.getEntry(structure)));
                 Pair<BlockPos, RegistryEntry<Structure>> pair = world.getChunkManager().getChunkGenerator().locateStructure(world, entryList, center, radius, false);
                 if (pair != null) {
                     BlockPos pos = pair.getFirst();
